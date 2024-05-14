@@ -18,13 +18,13 @@ class WelcomeViewController: UIViewController {
         
         // titleAnimation()
         // 위의 함수와 동일한 효과를 주는 코코아팟 사용
-        titleLabel.text = "⚡️FlashChat"
+        titleLabel.text = K.appName
     }
     
     func titleAnimation(){
         titleLabel.text = ""
         var strIndex = 0.0
-        let titleText = "⚡️FlashChat"
+        let titleText = K.appName
         for str in titleText {
             Timer.scheduledTimer(withTimeInterval: 0.15 * strIndex, repeats: false) { (timer) in
                 self.titleLabel.text?.append(str)

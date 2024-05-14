@@ -26,8 +26,8 @@ class LoginViewController: UIViewController {
                     self.present(alert, animated: true, completion: nil)
                 } else {
                     if let ar = authResult {
-                        print(ar)
-                        self.performSegue(withIdentifier: "LoginToChat", sender: self)
+                        //print(ar)
+                        self.performSegue(withIdentifier: K.loginSegue, sender: self)
                     }
                 }
             }
